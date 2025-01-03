@@ -9,10 +9,19 @@ namespace ProdutoService.API.Controllers;
 public class ProdutoController : ControllerBase
 {
     private readonly IProdutoService _service;
+    private readonly UsuarioServiceClient _usuarioServiceClient;
 
-    public ProdutoController(IProdutoService service)
+    public ProdutoController(IProdutoService service, UsuarioServiceClient usuarioServiceClient)
     {
         _service = service;
+        _usuarioServiceClient = usuarioServiceClient;
+    }
+
+    [HttpGet("usuario/{id}")]
+    public async Task<IActionResult> GetDonoProduto(int id)
+    {
+        var userName = await _usuarioServiceClient.GetUsuarioByIdAsync(id);
+        return Ok(new { ProductId = id, Owner = userName });
     }
 
     [HttpGet]

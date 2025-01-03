@@ -13,6 +13,13 @@ builder.Services.AddDbContext<ProdutoDbContext>(options =>
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoServices>();
 
+builder.Services.AddHttpClient("UsuarioService", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5009");
+});
+
+builder.Services.AddSingleton<UsuarioServiceClient>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
