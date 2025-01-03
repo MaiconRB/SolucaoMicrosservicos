@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuarioService", "UsuarioSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutoService", "ProdutoService\ProdutoService.csproj", "{CEA8B0EC-789F-4751-A74E-39BBF681A15C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuarioService.Tests", "UsuarioService.Tests\UsuarioService.Tests.csproj", "{8EE68298-5DD5-4ABB-8EF3-23E457A06388}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CEA8B0EC-789F-4751-A74E-39BBF681A15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEA8B0EC-789F-4751-A74E-39BBF681A15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEA8B0EC-789F-4751-A74E-39BBF681A15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE68298-5DD5-4ABB-8EF3-23E457A06388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE68298-5DD5-4ABB-8EF3-23E457A06388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE68298-5DD5-4ABB-8EF3-23E457A06388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE68298-5DD5-4ABB-8EF3-23E457A06388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
