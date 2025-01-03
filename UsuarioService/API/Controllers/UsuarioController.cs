@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UsuarioService.Application.Services;
 using UsuarioService.Core.Entities;
+using UsuarioService.Core.Interfaces;
 
 namespace UsuarioService.API.Controllers;
 
@@ -8,9 +9,9 @@ namespace UsuarioService.API.Controllers;
 [Route("api/[controller]")]
 public class UsuarioController : ControllerBase
 {
-    private readonly UsuarioServices _usuarioService;
+    private readonly IUsuarioService _usuarioService;
 
-    public UsuarioController(UsuarioServices usuarioService)
+    public UsuarioController(IUsuarioService usuarioService)
     {
         _usuarioService = usuarioService;
     }

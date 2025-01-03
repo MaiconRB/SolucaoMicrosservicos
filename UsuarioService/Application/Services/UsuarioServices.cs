@@ -3,7 +3,7 @@ using UsuarioService.Core.Interfaces;
 
 namespace UsuarioService.Application.Services;
 
-public class UsuarioServices
+public class UsuarioServices : IUsuarioService
 {
     private readonly IUsuarioRepository _repository;
 
